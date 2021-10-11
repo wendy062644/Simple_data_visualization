@@ -1,0 +1,90 @@
+{% load static %}
+<html>
+	<head>
+		<link href="{% static 'fontawesome-free-5.15.3-web/css/all.min.css' %}" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<title>作品紀錄</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<noscript><link rel="stylesheet" href="{% static 'information1/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body>
+	<ul class="nav nav-pills nav-fill">
+	 	<nav class="navbar fixed-top navbar-light" style="background-color:black">
+	 	<div class="container fluid">
+ 	 	<li class="nav-item">
+         	<a class="nav-link" href="home" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-home"></i>&nbsp; 首頁 Home</a>
+     	 	</li>
+     	 	<li class="nav-item">
+      	 	<a class="nav-link active" href="about" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-info-circle"></i>&nbsp; 關於 About</a>
+     	 	</li>
+     		<li class="nav-item">
+       		<a class="nav-link" href="share" style="font-weight: bold; color: white; font-size:2vmin;"><i class="far fa-file-word"></i>&nbsp; 各類分享文</a>
+     		</li>
+     		<li class="nav-item active">
+       		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold; color: white ; font-size:2vmin;"><i class="fas fa-spider"></i>&nbsp; 爬蟲時事資訊</a>
+       		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        	<a class="dropdown-item" href="spidercovid-19" style="font-weight: bold; color: black; font-size:2vmin;"><i class="fas fa-lungs-virus"></i>&nbsp;Covid-19 即時資訊&nbsp; </a>
+         	<a class="dropdown-item" href="spiderwater" style="font-weight: bold; color: black; font-size:2vmin;">&nbsp;<i class="fas fa-tint"></i>&nbsp;&nbsp;水庫水位即時資訊&nbsp; </a>
+         	<a class="dropdown-item" href="#" style="font-weight: bold; color: black; font-size:2vmin;"><i class="fas fa-wrench"></i>&nbsp;正在開發中...</a>
+       		</div>
+     		</li>
+     		<li class="nav-item">
+     		 	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold; color: white; font-size:2vmin;">
+      	 	<i class="fas fa-code"></i>&nbsp 程式練習
+      		 </a>
+       		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+       	  	 <a class="dropdown-item" href="https://zerojudge.tw/" style="font-weight: bold; color: black; font-size:2vmin;">Zero Judge 高中生程式解題系統</a>
+       	 	 <a class="dropdown-item" href="http://www.tcgs.tc.edu.tw:1218/" style="font-weight: bold; color: black; font-size:2vmin;">台中女中程式解題系統</a>
+       	 	<a class="dropdown-item" href="https://leetcode.com/" style="font-weight: bold; color: black; font-size:2vmin;">LeetCode</a>
+      	  	</div>
+      		</li>
+ 		</div>
+		</nav>
+	</ul>
+		<p style="font-size:3.5vmin;">&emsp;</p>
+		<div class="container" style="border-width:0.3vmin; border-style:solid; border-color:#000000; padding:0.5vmin; bakcground-color:white;>
+			<div class = "row">
+				<div class="col">
+					<p align="center" style="font-size:5vmin; font-weight:bold;">作品紀錄</p>
+					<p align="center" style="font-size:3vmin;">~此區為作品紀錄，歡迎下載使用~</p>
+					<hr size="4vmin">
+					<font size="5vmin">&emsp;</font>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-4" style="font-size:4vmin; font-weight:bold;" align="center">作品名稱</div>
+							<div class="col-4" style="font-size:4vmin; font-weight:bold;" align="center">說明、介紹</div>
+							<div class="col-4" style="font-size:4vmin; font-weight:bold;" align="center">下載</div>
+						</div>
+					</br>
+						<div class="row">
+							<div class="col-4" style="font-size:3vmin; font-weight:bold;" align="center">井字遊戲(圈圈叉叉)</div>
+							<div class="col-4" style="font-size:2.5vmin; font-weight:bold;" align="left">在經典遊戲中加入電腦，即使一個人也可以玩！</div>
+							<a class="col-4" style="font-size:3vmin; font-weight:bold;" align="center" href="https://reurl.cc/q1LMZn">遊戲下載</a>
+						</div>
+					</br>
+						<div class="row">
+							<div class="col-4" style="font-size:3vmin; font-weight:bold;" align="center">五子棋</div>
+							<div class="col-4" style="font-size:2.5vmin; font-weight:bold;" align="left">不只井字遊戲可以一個人玩，五子棋也可以！</div>
+							<a class="col-4" style="font-size:3vmin; font-weight:bold;" align="center" href="https://reurl.cc/emDjdQ">遊戲下載</a>
+						</div>
+					</br>
+						<div class="row">
+							<div class="col-4" style="font-size:3vmin; font-weight:bold;" align="center">俄羅斯方塊</div>
+							<div class="col-4" style="font-size:2.5vmin; font-weight:bold;" align="left">經典的方塊遊戲，連續消除越多，分數越高！</div>
+							<a class="col-4" style="font-size:3vmin; font-weight:bold;" align="center" href="https://reurl.cc/EZoO40">遊戲下載</a>
+						</div>
+					</br>
+					</div>
+				</div>
+				<hr>
+				</br>
+				<div style="font-size:2vmin;">&emsp;&emsp;&emsp;備註:cpp為C++程式碼檔案，exe為執行檔，只下載exe也可以玩~</div>
+				</br>
+			</div>
+		</div>
+	</body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>

@@ -61,3 +61,9 @@ def work(request):
 
 def share(request):
     return render(request, "share/share.html")
+
+def work(request):
+    return render(request, "work/work.html")
+
+def article1(request):
+    return render(request, "share/article1.html")

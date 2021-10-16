@@ -18,35 +18,30 @@
 			border-radius:10px;
 		}
 		</style>
-		<script type=”text/javascript”>
-			if(navigator.userAgent.match(/Android|iPhone|iPad/i)) {
-			window.location = ‘http://https://shopee.tw/’;
-			}
-		</script>
 	</head>
 	<body style="background-color:#282c35;">
 		<div class="fixed" align="center">
-			<a href="#" style="font-size:0.1vmin; text-decoration:none;">&emsp;&emsp;&emsp;</a></br>
+			<a href="#" style="font-size:0.1vmin; text-decoration:none;">&emsp;</a></br>
 			<a href="#" style="font-size:5vmin; text-decoration:none; color:white;"><i class="fas fa-chevron-up"></i></a></br>
-			<a href="#" style="font-size:0.1vmin; text-decoration:none;">&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+			<a href="#" style="font-size:0.1vmin; text-decoration:none;">&emsp;</a>
 		</div>
 		<ul class="nav nav-pills nav-fill">
 			<nav class="navbar fixed-top navbar-light" style="background-color:black">
 			<div class="container fluid">
  	   		<li class="nav-item">
-       	 		<a class="nav-link" href="home" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-home"></i>&nbsp;首頁</a>
+       	 		<a class="nav-link" href="http://127.0.0.1:8000/home" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-home"></i>&nbsp;首頁</a>
      	 		</li>
      	 		<li class="nav-item">
-      	 		<a class="nav-link" href="about" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-info-circle"></i>&nbsp; 關於</a>
+      	 		<a class="nav-link" href="http://127.0.0.1:8000/about" style="font-weight: bold; color: white; font-size:2vmin;"><i class="fas fa-info-circle"></i>&nbsp; 關於</a>
      	 		</li>
      			<li class="nav-item">
-       			<a class="nav-link active" href="share" style="font-weight: bold; color: white; font-size:2vmin;"><i class="far fa-file-word"></i>&nbsp; 分享文</a>
+       			<a class="nav-link active" href="http://127.0.0.1:8000/share" style="font-weight: bold; color: white; font-size:2vmin;"><i class="far fa-file-word"></i>&nbsp; 分享文</a>
      			</li>
      			 <li class="nav-item active">
        			 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold; color: white ; font-size:2vmin;"><i class="fas fa-spider"></i>&nbsp; 時事資訊</a>
        			 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        			 <a class="dropdown-item" href="spidercovid-19" style="font-weight: bold; color: black; font-size:2vmin;"><i class="fas fa-lungs-virus"></i>&nbsp;Covid-19 即時資訊&nbsp; </a>
-         			 <a class="dropdown-item" href="spiderwater" style="font-weight: bold; color: black; font-size:2vmin;">&nbsp;<i class="fas fa-tint"></i>&nbsp;&nbsp;水庫水位即時資訊&nbsp; </a>
+        			 <a class="dropdown-item" href="http://127.0.0.1:8000/spidercovid-19" style="font-weight: bold; color: black; font-size:2vmin;"><i class="fas fa-lungs-virus"></i>&nbsp;Covid-19 即時資訊&nbsp; </a>
+         			 <a class="dropdown-item" href="http://127.0.0.1:8000/spiderwater" style="font-weight: bold; color: black; font-size:2vmin;">&nbsp;<i class="fas fa-tint"></i>&nbsp;&nbsp;水庫水位即時資訊&nbsp; </a>
          			 <a class="dropdown-item" href="#" style="font-weight: bold; color: black; font-size:2vmin;">&nbsp;<i class="fas fa-wrench"></i>&nbsp;正在開發中...</a>
        			 </div>
      			 </li>
@@ -66,26 +61,12 @@
 		<h2>&emsp;</h2>
 		<h3>&emsp;</h3>
 		<div class="container-sm">
+			<a href="http://127.0.0.1:8000/share" style="color:#F5F5F5; font-size:2.3vmin; text-decoration:none;"><i class="fas fa-angle-left"></i> 返回上一頁</a>
 			<div class="row">
 				<div class="col-8">
-					</br>
 					<div class="container-sm" style="background-color:#222222; border-radius:10px;">
-						&emsp;
-						<div class="row">
-							<div class="col-11">
-								<a href="share/article1" style="color:#F5F5F5; font-size:4vmin; text-decoration:none; font-weight:bold;">我的第一篇文章</a>
-							</div>
-							<div class="col-1">
-								<p style="color:#F5F5F5; font-size:1vmin; text-decoration:none;">2021/8/31</p>
-							</div>
-						</div>
-						<div class="row">
-							<p style="color:#F5F5F5; font-size:1.8vmin;">看到這一篇時，整個網站應該完成了90%以上了，不過能看到這裡代表已經成功讓外部連線了~從一開始的構想到完成，經歷了好幾個月，有時只因一個小小BUG就卡了好幾天，有時為了讓手機畫面顯示較正常而做了些妥協，雖然手機的介面還沒有完全搞定，但...至少還是人看的 XD</p>
-						</div>
-						<div class="row">
-							<a href="share/article1"><img src="{% static 'share\pic1.jpg' %}" width="100%"></a>
-						</div>
-						</br>
+						&nbsp;
+						<h1 align="center" style="color:#F5F5F5; font-weight:bold; ">我的第一篇文</h1>
 					</div>
 				</div>
 				<div class="col-1">
@@ -140,8 +121,10 @@
 				</div>
 			</div>
 		</div>
-	</body>
 
+
+
+	</body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>

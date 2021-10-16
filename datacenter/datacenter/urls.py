@@ -31,4 +31,5 @@ urlpatterns = [
     path('profile', views.profile),
     path('work', views.work),
     path('share', views.share),
+    path('share/article1', views.article1),
 ]
